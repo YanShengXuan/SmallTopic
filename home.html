@@ -18,7 +18,7 @@
         <div class="d-flex justify-content-center">
             <img src="img/Heard.png" alt="" class="img-fluid">
         </div>
-        <nav class="navbar navbar-expand-lg sticky-top nav_color">
+        <nav class="navbar navbar-expand-md sticky-top nav_color">
             <div class="container-fluid">
                 <span class="navbar-brand">貓灶咖</span>
 
@@ -72,43 +72,67 @@
         </nav>
     </head>
 
-
-
     <main>
-        我是主頁
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br>
+        <div class="container pt-2">
+            <div class="row">
+                <div class="col-3 px-1">
+                    <div class="border border-3 rounded">
+                        <div class="container text-center pt-3">
+                            <h4 class="fw-bold">奴才發洩區</h4>
+                            <form id="messageForm" class="pb-3">
+                                <div class="mb-3 pt-3">
+                                    <input type="text" class="form-control" id="name" placeholder="該怎麼稱呼您？">
+                                </div>
+                                <div class="mb-3 pt-2">
+                                    <textarea type="text" class="form-control" id="message" rows="4"
+                                        placeholder="主子做了甚麼？！"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">宣洩吧</button>
+                            </form>
+                            <hr class="border border-danger border-4 rounded opacity-100">
+                            <div class="message_container" id="messageContainer">
+                                <!-- 留言內容 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="col-12 pb-2">
+                        <div class=" border border-3 rounded">
+                            <div class="container text-center pt-2 main_container">
+                                <h4 class="fw-bold">好康相報</h4>
+                                <hr class="border border-2 opacity-100 border-success">
+                                <img src="/img/flyers-1.png" alt="飼料優惠" class="d-block mx-auto" width="650" height="600">
+                                <a href="http://www.google.com"><h2>詳情</h2></a>
+                                <hr>
+                                <img src="/img/flyers-2.png" alt="貓咪比賽" class="d-block mx-auto" width="650" height="600">
+                                <a href="http://www.google.com"><h2>詳情</h2></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class=" border border-3 rounded">
+                            <div class="container text-center pt-2">
+                                <h4 class="fw-bold">主子照</h4>
+                                <hr class="border border-2 opacity-100 border-success">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br><br><br><br><br><br><br><br><br><br><br>
     </main>
 
 
     <footer>
         Copyright © 2024 YanShengXuan ｜E-mail：shengxuan.yan1995@gmail.com
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="BS/js/bootstrap.bundle.js"></script>
+    <script src="myScript/script.js"></script>
 </body>
 
 </html>
