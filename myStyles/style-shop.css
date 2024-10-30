@@ -1,0 +1,62 @@
+body {
+    background-image: url("/img/body.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    font-family: "標楷體", "DFKai-SB", "KaiTi", serif;
+    font-weight: 700;
+}
+
+/* ---------------------------------------------------- */
+li a[class*=nav-link]:hover{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+li div:hover{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+li a[class*=dropdown-item]:hover{
+    text-decoration: underline;
+}
+
+/* ---------------------------------------------------- */
+.nav_color {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ---------------------------------------------------- */
+.message_container{
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.main_container{
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* ---------------------------------------------------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+
+/* ---------------------------------------------------- */
+.nav-link{
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+.dropdown-item{
+    font-size: 20px;
+}
+
+.dropdown{
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
