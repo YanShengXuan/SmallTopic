@@ -14,7 +14,7 @@ li a[class*=nav-link]:hover{
     border-radius: 10px;
 }
 
-li div:hover{
+.dropdown:hover {
     border: 2px solid black;
     border-radius: 10px;
 }

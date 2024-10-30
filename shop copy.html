@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="網頁說明">
+    <meta name="keywords" content="關鍵字">
+    <meta name="author" content="YanShengXuan">
+    <title>貓灶咖</title>
+    <link rel="stylesheet" href="BS/css/bootstrap.css">
+    <link rel="stylesheet" href="myStyles/style-shop.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="d-flex justify-content-center">
+            <img src="img/Heard.png" alt="" class="img-fluid">
+        </div>
+        <nav class="navbar navbar-expand-md sticky-top nav_color">
+            <div class="container-fluid">
+                <span class="navbar-brand">貓灶咖</span>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse fs-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">
+                                <img src="img/Navbar.png" alt="" width="20" height="20"
+                                    class="d-inline-block align-text-top">貓咪交流
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="item.html">
+                                <img src="img/Navbar.png" alt="" width="20" height="20"
+                                    class="d-inline-block align-text-top">新手養貓
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="nav-link" data-bs-toggle="dropdown" aria-expanded="flase">
+                                    <img src="img/Navbar.png" alt="" width="20" height="20"
+                                        class="d-inline-block align-text-top">品種介紹
+                                </button>
+                                <ul class="dropdown-menu nav_color">
+                                    <li class="mb-2"><a class="dropdown-item text-center"
+                                            href="introduce-1-Shorthair.html">短毛</a></li>
+                                    <li class="mb-2"><a class="dropdown-item text-center"
+                                            href="introduce-2-Longhair.html">長毛</a></li>
+                                    <li class="mb-2"><a class="dropdown-item text-center"
+                                            href="introduce-3-hybrid.html">混種</a></li>
+                                    <li><a class="dropdown-item text-center" href="introduce-4-special.html">特殊</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">
+                                <img src="img/Navbar.png" alt="" width="20" height="20"
+                                    class="d-inline-block align-text-top">寵物百貨
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="member.html">
+                                <img src="img/Navbar.png" alt="" width="20" height="20"
+                                    class="d-inline-block align-text-top">會員專區
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pb-5 pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div id="myBtnContainer">
+                        <div class="anti list-group-item active fs-1 text-center myTitle"
+                            onclick="filterSelection('all')">
+                            全部商品</div>
+                        <div class="d-flex flex-column border border-4 pb-2">
+                            <div class="anti fs-3 text-start myTitle" onclick="filterSelection('food')">食物類</div>
+                            <ul class="list-group list-group-flush fs-3 text-center">
+                                <li class="anti antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('feed')">
+                                    飼料
+                                </li>
+                                <li class="anti antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('tin')">罐頭
+                                </li>
+                                <li class="anti antiWhite list-group-item mx-3" onclick="filterSelection('snack')">零食
+                                </li>
+                            </ul>
+                            <div class="anti fs-3 text-start myTitle" onclick="filterSelection('toys')">玩具類</div>
+                            <ul class="list-group list-group-flush fs-3 text-center">
+                                <li class="anti antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('scratching')">
+                                    貓抓板</li>
+                                <li class="anti antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('stick')">逗貓棒
+                                </li>
+                                <li class="anti antiWhite list-group-item mx-3" onclick="filterSelection('jump')">貓跳台</li>
+                            </ul>
+                            <div class="anti fs-3 text-start myTitle" onclick="filterSelection('cleaning')">清潔類</div>
+                            <ul class="list-group list-group-flush fs-3 text-center">
+                                <li class="anti antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('sand')">貓砂
+                                </li>
+                                <li class="anti antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('basin')">貓砂盆
+                                </li>
+                            </ul>
+                            <div class="anti fs-3 text-start myTitle" onclick="filterSelection('sundries')">雜項</div>
+                            <ul class="list-group list-group-flush fs-3 text-center">
+                                <li class="anti antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('scissors')">
+                                    指甲剪</li>
+                                <li class="anti antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('cage')">外出籠
+                                </li>
+                                <li class="anti antiWhite list-group-item mx-3" onclick="filterSelection('collar')">項圈</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-8 pt-5">
+                    <div class="container">
+                        <ul>
+                            <div class="row">
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv food feed">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv food feed">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv food feed">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv food tin">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv food tin">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv food tin">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv food snack">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv food snack">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv food snack">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv toys scratching">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv toys scratching">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv toys scratching">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv toys stick">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv toys stick">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv toys stick">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv toys jump">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv toys jump">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv toys jump">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv cleaning sand">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv cleaning sand">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv cleaning sand">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv cleaning basin">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv cleaning basin">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv cleaning basin">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv sundries scissors">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv sundries scissors">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv sundries scissors">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv sundries cage">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv sundries cage">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv sundries cage">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv sundries collar">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv sundries collar">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3">
+                                    <div class="filterDiv sundries collar">
+                                        <div class="card" style="width: 100%;">
+                                            <img src="img/item-1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center">品名</h3>
+                                                <p class="card-text">產品說明</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">尺寸</li>
+                                                <li class="list-group-item">數量</li>
+                                            </ul>
+                                            <div class="card-body">
+                                                <button class="btn btn-primary container">加入購物車</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        Copyright © 2024 YanShengXuan ｜E-mail：shengxuan.yan1995@gmail.com
+    </footer>
+
+    <script src="BS/js/bootstrap.bundle.js"></script>
+    <script src="myScript/script-shop.js"></script>
+</body>
+
+</html>
