@@ -9,9 +9,18 @@ body {
 }
 
 /* ---------------------------------------------------- */
-li a:hover{
+li a[class*=nav-link]:hover{
     border: 2px solid black;
     border-radius: 10px;
+}
+
+li div:hover{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+li a[class*=dropdown-item]:hover{
+    text-decoration: underline;
 }
 
 /* ---------------------------------------------------- */
@@ -38,8 +47,16 @@ footer {
     font-size: 20px;
 }
 
-/* ----------------------修改BS------------------------- */
+/* ---------------------------------------------------- */
 .nav-link{
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+.dropdown-item{
+    font-size: 20px;
+}
+
+.dropdown{
     border: 2px solid transparent;
     border-radius: 10px;
 }
