@@ -9,17 +9,17 @@ body {
 }
 
 /* ---------------------------------------------------- */
-li a[class*=nav-link]:hover{
+li a[class*=nav-link]:hover {
     border: 2px solid black;
     border-radius: 10px;
 }
 
-li div:hover{
+li div:hover {
     border: 2px solid black;
     border-radius: 10px;
 }
 
-li a[class*=dropdown-item]:hover{
+li a[class*=dropdown-item]:hover {
     text-decoration: underline;
     background-color: rgba(255, 255, 255, 0.5);
 }
@@ -30,9 +30,36 @@ li a[class*=dropdown-item]:hover{
 }
 
 /* ---------------------------------------------------- */
+ul li[class*=list-group-item]{
+    background-color: rgba(255, 255, 255, 0.5);
+}
 
+ul li[class*=list-group-item]:hover{
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+}
 
+.myTitle:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 
+.filterDiv {
+    display: none;
+    padding-bottom: 20px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+    background-color: #666;
+    color: white;
+}
 
 /* ---------------------------------------------------- */
 footer {
@@ -43,15 +70,16 @@ footer {
 }
 
 /* ---------------------------------------------------- */
-.nav-link{
+.nav-link {
     border: 2px solid transparent;
     border-radius: 10px;
 }
-.dropdown-item{
+
+.dropdown-item {
     font-size: 20px;
 }
 
-.dropdown{
+.dropdown {
     border: 2px solid transparent;
     border-radius: 10px;
 }
