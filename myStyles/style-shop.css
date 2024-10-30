@@ -21,6 +21,7 @@ li div:hover{
 
 li a[class*=dropdown-item]:hover{
     text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* ---------------------------------------------------- */
@@ -29,15 +30,9 @@ li a[class*=dropdown-item]:hover{
 }
 
 /* ---------------------------------------------------- */
-.message_container{
-    max-height: 200px;
-    overflow-y: auto;
-}
 
-.main_container{
-    max-height: 400px;
-    overflow-y: auto;
-}
+
+
 
 /* ---------------------------------------------------- */
 footer {
