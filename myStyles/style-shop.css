@@ -30,6 +30,12 @@ li a[class*=dropdown-item]:hover {
 }
 
 /* ---------------------------------------------------- */
+li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 ul li[class*=list-group-item]{
     background-color: rgba(255, 255, 255, 0.5);
 }

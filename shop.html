@@ -82,31 +82,50 @@
             <div class="row">
                 <div class="col-2">
                     <div id="myBtnContainer">
-                        <div class="list-group-item active fs-1 text-center myTitle" onclick="filterSelection('all')">
+                        <div class="anti list-group-item active fs-1 text-center myTitle"
+                            onclick="filterSelection('all')">
                             全部商品</div>
                         <div class="d-flex flex-column border border-4 pb-2">
-                            <div class="fs-3 text-start myTitle" onclick="filterSelection('food')">食物類</div>
+                            <div class="anti fs-3 text-start myTitle" onclick="filterSelection('food')">食物類</div>
                             <ul class="list-group list-group-flush fs-3 text-center">
-                                <li class="antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('feed')">飼料</li>
-                                <li class="antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('tin')">罐頭</li>
-                                <li class="antiWhite list-group-item mx-3" onclick="filterSelection('snack')">零食</li>
+                                <li class="anti antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('feed')">
+                                    飼料
+                                </li>
+                                <li class="anti antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('tin')">罐頭
+                                </li>
+                                <li class="anti antiWhite list-group-item mx-3" onclick="filterSelection('snack')">零食
+                                </li>
                             </ul>
-                            <div class="fs-3 text-start myTitle" onclick="filterSelection('toys')">玩具類</div>
+                            <div class="anti fs-3 text-start myTitle" onclick="filterSelection('toys')">玩具類</div>
                             <ul class="list-group list-group-flush fs-3 text-center">
-                                <li class="antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('scratching')">貓抓板</li>
-                                <li class="antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('stick')">逗貓棒</li>
-                                <li class="antiWhite list-group-item mx-3" onclick="filterSelection('jump')">貓跳台</li>
+                                <li class="anti antiWhite list-group-item mx-3 mb-1"
+                                    onclick="filterSelection('scratching')">
+                                    貓抓板</li>
+                                <li class="anti antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('stick')">
+                                    逗貓棒
+                                </li>
+                                <li class="anti antiWhite list-group-item mx-3" onclick="filterSelection('jump')">貓跳台
+                                </li>
                             </ul>
-                            <div class="fs-3 text-start myTitle" onclick="filterSelection('cleaning')">清潔類</div>
+                            <div class="anti fs-3 text-start myTitle" onclick="filterSelection('cleaning')">清潔類</div>
                             <ul class="list-group list-group-flush fs-3 text-center">
-                                <li class="antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('sand')">貓砂</li>
-                                <li class="antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('basin')">貓砂盆</li>
+                                <li class="anti antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('sand')">
+                                    貓砂
+                                </li>
+                                <li class="anti antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('basin')">
+                                    貓砂盆
+                                </li>
                             </ul>
-                            <div class="fs-3 text-start myTitle" onclick="filterSelection('sundries')">雜項</div>
+                            <div class="anti  fs-3 text-start myTitle" onclick="filterSelection('sundries')">雜項</div>
                             <ul class="list-group list-group-flush fs-3 text-center">
-                                <li class="antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('scissors')">指甲剪</li>
-                                <li class="antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('cage')">外出籠</li>
-                                <li class="antiWhite list-group-item mx-3" onclick="filterSelection('collar')">項圈</li>
+                                <li class="anti antiWhite list-group-item mx-3 mb-1"
+                                    onclick="filterSelection('scissors')">
+                                    指甲剪</li>
+                                <li class="anti antiWhite list-group-item mx-3 mb-1" onclick="filterSelection('cage')">
+                                    外出籠
+                                </li>
+                                <li class="anti antiWhite list-group-item mx-3" onclick="filterSelection('collar')">項圈
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -114,9 +133,25 @@
 
                 <div class="col-8 pt-5">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="filterDiv food feed">
+                        <ul>
+                            <div class="row">
+                                <li class="col-md-4 mb-3 filterDiv food feed">
+                                    <div class="card" style="width: 100%;">
+                                        <img src="img/feed-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h3 class="card-title text-center">藍摯bluebuffalo</h3>
+                                            <p class="card-text text-center">幼貓去骨雞肉無穀配方</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">尺寸</li>
+                                            <li class="list-group-item">數量</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <button class="btn btn-primary container">加入購物車</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv food feed">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -131,10 +166,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv food feed">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv food feed">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -149,10 +182,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv food feed">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv food tin">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -167,13 +198,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="filterDiv food tin">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv food tin">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -188,10 +214,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv food tin">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv food tin">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -206,10 +230,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv food tin">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv food snack">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -224,13 +246,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="filterDiv food snack">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv food snack">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -245,28 +262,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv food snack">
-                                    <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
-                                        </ul>
-                                        <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv food snack">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv food snack">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -282,13 +279,8 @@
                                         </div>
 
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="filterDiv toys scratching">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv toys scratching">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -303,10 +295,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv toys scratching">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv toys scratching">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -321,10 +311,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv toys scratching">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv toys scratching">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -339,13 +327,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="filterDiv toys stick">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv toys stick">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -360,10 +343,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv toys stick">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv toys stick">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -378,10 +359,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv toys stick">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv toys stick">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -396,13 +375,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="filterDiv toys jump">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv toys jump">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -417,10 +391,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv toys jump">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv toys jump">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -435,10 +407,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv toys jump">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv toys jump">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -453,13 +423,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="filterDiv cleaning sand">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv cleaning sand">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -474,10 +439,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv cleaning sand">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv cleaning sand">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -492,10 +455,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv cleaning sand">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv cleaning sand">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -510,13 +471,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="filterDiv cleaning basin">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv cleaning basin">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -531,10 +487,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv cleaning basin">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv cleaning basin">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -549,10 +503,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv cleaning basin">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv cleaning basin">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -567,13 +519,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="filterDiv sundries scissors">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv sundries scissors">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -588,10 +535,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv sundries scissors">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv sundries scissors">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -606,10 +551,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv sundries scissors">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv sundries scissors">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -624,13 +567,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="filterDiv sundries cage">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv sundries cage">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -645,10 +583,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv sundries cage">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv sundries cage">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -663,10 +599,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv sundries cage">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv sundries cage">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -681,13 +615,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="filterDiv sundries collar">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv sundries collar">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -702,10 +631,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv sundries collar">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv sundries collar">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -720,10 +647,8 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="filterDiv sundries collar">
+                                </li>
+                                <li class="col-md-4 mb-3 filterDiv sundries collar">
                                     <div class="card" style="width: 100%;">
                                         <img src="img/item-1.png" class="card-img-top" alt="...">
                                         <div class="card-body">
@@ -738,9 +663,9 @@
                                             <button class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
-                                </div>
+                                </li>
                             </div>
-                        </div>
+                        </ul>
                     </div>
                 </div>
             </div>
