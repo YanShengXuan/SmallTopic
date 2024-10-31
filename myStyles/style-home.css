@@ -9,7 +9,7 @@ body {
 }
 
 /* ---------------------------------------------------- */
-li a[class*=nav-link]:hover{
+li a[class*=nav-link]:hover {
     border: 2px solid black;
     border-radius: 10px;
 }
@@ -19,7 +19,7 @@ li a[class*=nav-link]:hover{
     border-radius: 10px;
 }
 
-li a[class*=dropdown-item]:hover{
+li a[class*=dropdown-item]:hover {
     text-decoration: underline;
     background-color: rgba(255, 255, 255, 0.5);
 }
@@ -27,15 +27,16 @@ li a[class*=dropdown-item]:hover{
 /* ---------------------------------------------------- */
 .nav_color {
     background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1030;
 }
 
 /* ---------------------------------------------------- */
-.message_container{
+.message_container {
     max-height: 200px;
     overflow-y: auto;
 }
 
-.main_container{
+.main_container {
     max-height: 400px;
     overflow-y: auto;
 }
@@ -49,15 +50,16 @@ footer {
 }
 
 /* ---------------------------------------------------- */
-.nav-link{
+.nav-link {
     border: 2px solid transparent;
     border-radius: 10px;
 }
-.dropdown-item{
+
+.dropdown-item {
     font-size: 20px;
 }
 
-.dropdown{
+.dropdown {
     border: 2px solid transparent;
     border-radius: 10px;
 }
