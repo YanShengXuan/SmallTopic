@@ -139,533 +139,731 @@
                                     <div class="card" style="width: 100%;">
                                         <img src="img/feed-1.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">藍摯bluebuffalo</h3>
+                                            <h4 id="feed-1-name" class="card-title text-center">藍摯A</h4>
                                             <p class="card-text text-center">幼貓去骨雞肉無穀配方</p>
+                                            <p id="feed-1-price" class="card-text text-center">NT. 100</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
+                                            <li class="list-group-item">
+                                                <label for="feed-1-size">尺寸：</label>
+                                                <select name="" id="feed-1-size" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇尺寸</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <label for="feed-1-count">數量：</label>
+                                                <select name="" id="feed-1-count" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇數量</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                         <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
+                                            <button onclick="addToShopCart('feed-1-name', 'feed-1-price', 'feed-1-size', 'feed-1-count')"
+                                            class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-4 mb-3 filterDiv food feed">
                                     <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
+                                        <img src="img/feed-2.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
+                                            <h4 id="feed-2-name" class="card-title text-center">藍摯B</h4>
+                                            <p class="card-text text-center">成貓去骨雞肉無穀配方</p>
+                                            <p id="feed-2-price" class="card-text text-center">NT. 100</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
+                                            <li class="list-group-item">
+                                                <label for="feed-2-size">尺寸：</label>
+                                                <select name="" id="feed-2-size" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇尺寸</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <label for="feed-2-count">數量：</label>
+                                                <select name="" id="feed-2-count" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇數量</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                         <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
+                                            <button onclick="addToShopCart('feed-2-name', 'feed-2-price', 'feed-2-size', 'feed-2-count')"
+                                            class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-4 mb-3 filterDiv food feed">
                                     <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
+                                        <img src="img/feed-3.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
+                                            <h4 id="feed-3-name" class="card-title text-center">藍摯C</h4>
+                                            <p class="card-text text-center">成貓去骨鴨肉無穀配方</p>
+                                            <p id="feed-3-price" class="card-text text-center">NT. 100</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
+                                            <li class="list-group-item">
+                                                <label for="feed-3-size">尺寸：</label>
+                                                <select name="" id="feed-3-size" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇尺寸</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <label for="feed-3-count">數量：</label>
+                                                <select name="" id="feed-3-count" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇數量</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                         <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
+                                            <button onclick="addToShopCart('feed-3-name', 'feed-3-price', 'feed-3-size', 'feed-3-count')"
+                                            class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-4 mb-3 filterDiv food tin">
                                     <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
+                                        <img src="img/tin-1.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
+                                            <h4 id="tin-1-name" class="card-title text-center">德國A</h4>
+                                            <p class="card-text text-center">主食罐 火雞+羊肉 200g</p>
+                                            <p id="tin-1-price" class="card-text text-center">NT. 100</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
+                                            <li class="list-group-item">
+                                                <label for="tin-1-size">尺寸：</label>
+                                                <select name="" id="tin-1-size" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇尺寸</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <label for="tin-1-count">數量：</label>
+                                                <select name="" id="tin-1-count" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇數量</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                         <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
+                                            <button onclick="addToShopCart('tin-1-name', 'tin-1-price', 'tin-1-size', 'tin-1-count')"
+                                            class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-4 mb-3 filterDiv food tin">
                                     <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
+                                        <img src="img/tin-2.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
+                                            <h4 id="tin-1-name" class="card-title text-center">德國B</h4>
+                                            <p class="card-text text-center">主食罐 有機純鴨 200g</p>
+                                            <p id="tin-1-price" class="card-text text-center">NT. 100</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
+                                            <li class="list-group-item">
+                                                <label for="tin-2-size">尺寸：</label>
+                                                <select name="" id="tin-2-size" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇尺寸</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <label for="tin-2-count">數量：</label>
+                                                <select name="" id="tin-2-count" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇數量</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                         <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
+                                            <button onclick="addToShopCart('tin-2-name', 'tin-2-price', 'tin-2-size', 'tin-2-count')"
+                                            class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-4 mb-3 filterDiv food tin">
                                     <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
+                                        <img src="img/tin-3.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
+                                            <h4 id="tin-3-name" class="card-title text-center">WERUVA唯美味</h4>
+                                            <p class="card-text text-center">美味樂透雞 (鮮雞肉)</p>
+                                            <p id="tin-3-price" class="card-text text-center">NT. 100</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
+                                            <li class="list-group-item">
+                                                <label for="tin-3-size">尺寸：</label>
+                                                <select name="" id="tin-3-size" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇尺寸</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <label for="tin-3-count">數量：</label>
+                                                <select name="" id="tin-3-count" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇數量</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                         <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
+                                            <button onclick="addToShopCart('tin-3-name', 'tin-3-price', 'tin-3-size', 'tin-3-count')"
+                                            class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-4 mb-3 filterDiv food snack">
                                     <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
+                                        <img src="img/snack-1.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
+                                            <h4 id="snack-1-name" class="card-title text-center">KAT 鮮肉泥A</h4>
+                                            <p class="card-text text-center">雞肉+蔬菜 14g*4入</p>
+                                            <p id="snack-1-price" class="card-text text-center">NT. 100</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
+                                            <li class="list-group-item">
+                                                <label for="snack-1-size">尺寸：</label>
+                                                <select name="" id="snack-1-size" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇尺寸</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <label for="snack-1-count">數量：</label>
+                                                <select name="" id="snack-1-count" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇數量</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                         <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
+                                            <button onclick="addToShopCart('snack-1-name', 'snack-1-price', 'snack-1-size', 'snack-1-count')"
+                                            class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-4 mb-3 filterDiv food snack">
                                     <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
+                                        <img src="img/snack-2.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
+                                            <h4 id="snack-2-name" class="card-title text-center">KAT 鮮肉泥B</h4>
+                                            <p class="card-text text-center">雞肉+柴魚 14g*4入</p>
+                                            <p id="snack-2-price" class="card-text text-center">NT. 100</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
+                                            <li class="list-group-item">
+                                                <label for="snack-2-size">尺寸：</label>
+                                                <select name="" id="snack-2-size" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇尺寸</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <label for="snack-2-count">數量：</label>
+                                                <select name="" id="snack-2-count" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇數量</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                         <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="col-md-4 mb-3 filterDiv food snack">
-                                    <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
-                                        </ul>
-                                        <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
-                                        </div>
-
-                                    </div>
-                                </li>
-                                <li class="col-md-4 mb-3 filterDiv toys scratching">
-                                    <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
-                                        </ul>
-                                        <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
+                                            <button onclick="addToShopCart('snack-2-name', 'snack-2-price', 'snack-2-size', 'snack-2-count')"
+                                            class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-4 mb-3 filterDiv toys scratching">
                                     <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
+                                        <img src="img/scratching-1.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
+                                            <h4 id="scratching-1-name" class="card-title text-center">CatFeet遊玩良品</h4>
+                                            <p class="card-text text-center">大斜坡</p>
+                                            <p id="scratching-1-price" class="card-text text-center">NT. 100</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
+                                            <li class="list-group-item">
+                                                <label for="scratching-1-size">尺寸：</label>
+                                                <select name="" id="scratching-1-size" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇尺寸</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <label for="scratching-1-count">數量：</label>
+                                                <select name="" id="scratching-1-count" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇數量</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                         <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
+                                            <button onclick="addToShopCart('scratching-1-name', 'scratching-1-price', 'scratching-1-size', 'scratching-1-count')"
+                                            class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-4 mb-3 filterDiv toys scratching">
                                     <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
+                                        <img src="img/scratching-2.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
+                                            <h4 id="scratching-2-name" class="card-title text-center">Cattyman</h4>
+                                            <p class="card-text text-center">貓抓抓遊戲麻繩圓床</p>
+                                            <p id="scratching-2-price" class="card-text text-center">NT. 100</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
+                                            <li class="list-group-item">
+                                                <label for="scratching-2-size">尺寸：</label>
+                                                <select name="" id="scratching-2-size" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇尺寸</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <label for="scratching-2-count">數量：</label>
+                                                <select name="" id="scratching-2-count" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇數量</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                         <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
+                                            <button onclick="addToShopCart('scratching-2-name', 'scratching-2-price', 'scratching-2-size', 'scratching-2-count')"
+                                            class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-4 mb-3 filterDiv toys stick">
                                     <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
+                                        <img src="img/stick-1.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
+                                            <h4 id="stick-1-name" class="card-title text-center">afp 追夢系列</h4>
+                                            <p class="card-text text-center">羽毛彩帶魔杖逗貓棒</p>
+                                            <p id="stick-1-price"class="card-text text-center">NT. 100</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
+                                            <li class="list-group-item">
+                                                <label for="stick-1-size">尺寸：</label>
+                                                <select name="" id="stick-1-size" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇尺寸</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <label for="stick-1-count">數量：</label>
+                                                <select name="" id="stick-1-count" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇數量</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                         <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
+                                            <button onclick="addToShopCart('stick-1-name', 'stick-1-price', 'stick-1-size', 'stick-1-count')"
+                                            class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-4 mb-3 filterDiv toys stick">
                                     <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
+                                        <img src="img/stick-2.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
+                                            <h4 id="stick-2-name" class="card-title text-center">Amy Carol 彈簧系列</h4>
+                                            <p class="card-text text-center">羽毛逗貓棒-#01紫綠色</p>
+                                            <p id="stick-2-price" class="card-text text-center">NT. 100</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
+                                            <li class="list-group-item">
+                                                <label for="stick-2-size">尺寸：</label>
+                                                <select name="" id="stick-2-size" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇尺寸</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <label for="stick-2-count">數量：</label>
+                                                <select name="" id="stick-2-count" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇數量</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                         <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="col-md-4 mb-3 filterDiv toys stick">
-                                    <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
-                                        </ul>
-                                        <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="col-md-4 mb-3 filterDiv toys jump">
-                                    <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
-                                        </ul>
-                                        <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
+                                            <button onclick="addToShopCart('stick-2-name', 'stick-2-price', 'stick-2-size', 'stick-2-count')"
+                                            class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-4 mb-3 filterDiv toys jump">
                                     <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
+                                        <img src="img/jump-1.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
+                                            <h4 id="jump-1-name" class="card-title text-center">PETSWEET</h4>
+                                            <p class="card-text text-center">四層多功能貓爬架</p>
+                                            <p id="jump-1-price" class="card-text text-center">NT. 100</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
+                                            <li class="list-group-item">
+                                                <label for="jump-1-size">尺寸：</label>
+                                                <select name="" id="jump-1-size" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇尺寸</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <label for="jump-1-count">數量：</label>
+                                                <select name="" id="jump-1-count" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇數量</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                         <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="col-md-4 mb-3 filterDiv toys jump">
-                                    <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
-                                        </ul>
-                                        <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="col-md-4 mb-3 filterDiv cleaning sand">
-                                    <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
-                                        </ul>
-                                        <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
+                                            <button onclick="addToShopCart('jump-1-name', 'jump-1-price', 'jump-1-size', 'jump-1-count')"
+                                            class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-4 mb-3 filterDiv cleaning sand">
                                     <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
+                                        <img src="img/sand-1.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
+                                            <h4 id="sand-1-name" class="card-title text-center">加拿大晶鑽PLUS</h4>
+                                            <p class="card-text text-center">低敏凝結細砂-嬰兒香</p>
+                                            <p id="sand-1-price" class="card-text text-center">NT. 100</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
+                                            <li class="list-group-item">
+                                                <label for="sand-1-size">尺寸：</label>
+                                                <select name="" id="sand-1-size" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇尺寸</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <label for="sand-1-count">數量：</label>
+                                                <select name="" id="sand-1-count" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇數量</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                         <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
+                                            <button onclick="addToShopCart('sand-1-name', 'sand-1-price', 'sand-1-size', 'sand-1-count')"
+                                            class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-4 mb-3 filterDiv cleaning sand">
                                     <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
+                                        <img src="img/sand-2.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
+                                            <h4 id="sand-2-name" class="card-title text-center">Cature凱沃</h4>
+                                            <p class="card-text text-center">天然綠茶豆腐凝結貓砂</p>
+                                            <p id="sand-2-price" class="card-text text-center">NT. 100</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
+                                            <li class="list-group-item">
+                                                <label for="sand-2-size">尺寸：</label>
+                                                <select name="" id="sand-2-size" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇尺寸</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <label for="sand-2-count">數量：</label>
+                                                <select name="" id="sand-2-count" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇數量</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                         <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
+                                            <button onclick="addToShopCart('sand-2-name', 'sand-2-price', 'sand-2-size', 'sand-2-count')"
+                                            class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-4 mb-3 filterDiv cleaning basin">
                                     <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
+                                        <img src="img/basin-1.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
+                                            <h4 id="basin-1-name" class="card-title text-center">Catidea貓樂適</h4>
+                                            <p class="card-text text-center">半封閉 (20L) 米白色</p>
+                                            <p id="basin-1-price" class="card-text text-center">NT. 100</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
+                                            <li class="list-group-item">
+                                                <label for="basin-1-size">尺寸：</label>
+                                                <select name="" id="basin-1-size" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇尺寸</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <label for="basin-1-count">數量：</label>
+                                                <select name="" id="basin-1-count" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇數量</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                         <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="col-md-4 mb-3 filterDiv cleaning basin">
-                                    <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
-                                        </ul>
-                                        <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="col-md-4 mb-3 filterDiv cleaning basin">
-                                    <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
-                                        </ul>
-                                        <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
+                                            <button onclick="addToShopCart('basin-1-name', 'basin-1-price', 'basin-1-size', 'basin-1-count')"
+                                            class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-4 mb-3 filterDiv sundries scissors">
                                     <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
+                                        <img src="img/scissors-1.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
+                                            <h4 id="scissors-1-name" class="card-title text-center">BaoLin</h4>
+                                            <p class="card-text text-center">寵物指甲剪</p>
+                                            <p id="scissors-1-price" class="card-text text-center">NT. 100</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
+                                            <li class="list-group-item">
+                                                <label for="scissors-1-size">尺寸：</label>
+                                                <select name="" id="scissors-1-size" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇尺寸</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <label for="scissors-1-count">數量：</label>
+                                                <select name="" id="scissors-1-count" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇數量</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                         <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="col-md-4 mb-3 filterDiv sundries scissors">
-                                    <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
-                                        </ul>
-                                        <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="col-md-4 mb-3 filterDiv sundries scissors">
-                                    <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
-                                        </ul>
-                                        <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
+                                            <button onclick="addToShopCart('scissors-1-name', 'scissors-1-price', 'scissors-1-size', 'scissors-1-count')"
+                                            class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-4 mb-3 filterDiv sundries cage">
                                     <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
+                                        <img src="img/cage-1.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
+                                            <h4 id="cage-1-name" class="card-title text-center">寵物物語</h4>
+                                            <p class="card-text text-center">運輸籠(米色)</p>
+                                            <p id="cage-1-price" class="card-text text-center">NT. 100</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
+                                            <li class="list-group-item">
+                                                <label for="cage-1-size">尺寸：</label>
+                                                <select name="" id="cage-1-size" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇尺寸</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <label for="cage-1-count">數量：</label>
+                                                <select name="" id="cage-1-count" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇數量</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                         <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
+                                            <button onclick="addToShopCart('cage-1-name', 'cage-1-price', 'cage-1-size', 'cage-1-count')"
+                                            class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-4 mb-3 filterDiv sundries cage">
                                     <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
+                                        <img src="img/cage-2.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
+                                            <h4 id="cage-2-name" class="card-title text-center">IRIS</h4>
+                                            <p class="card-text text-center">寵物提籃</p>
+                                            <p id="cage-2-price" class="card-text text-center">NT. 100</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
+                                            <li class="list-group-item">
+                                                <label for="cage-2-size">尺寸：</label>
+                                                <select name="" id="cage-2-size" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇尺寸</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <label for="cage-2-count">數量：</label>
+                                                <select name="" id="cage-2-count" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇數量</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                         <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="col-md-4 mb-3 filterDiv sundries cage">
-                                    <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
-                                        </ul>
-                                        <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="col-md-4 mb-3 filterDiv sundries collar">
-                                    <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
-                                        </ul>
-                                        <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
+                                            <button onclick="addToShopCart('cage-2-name', 'cage-2-price', 'cage-2-size', 'cage-2-count')"
+                                            class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-4 mb-3 filterDiv sundries collar">
                                     <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
+                                        <img src="img/collar-1.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
+                                            <h4 id="collar-1-name" class="card-title text-center">Amoworks</h4>
+                                            <p class="card-text text-center">和風氣球項圈</p>
+                                            <p id="collar-1-price" class="card-text text-center">NT. 100</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
+                                            <li class="list-group-item">
+                                                <label for="collar-1-size">尺寸：</label>
+                                                <select name="" id="collar-1-size" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇尺寸</option>
+                                                    <option value="S">S</option>
+                                                    <option value="M">M</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <label for="collar-1-count">數量：</label>
+                                                <select name="" id="collar-1-count" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇數量</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                         <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
+                                            <button onclick="addToShopCart('collar-1-name', 'collar-1-price', 'collar-1-size', 'collar-1-count')"
+                                            class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-4 mb-3 filterDiv sundries collar">
                                     <div class="card" style="width: 100%;">
-                                        <img src="img/item-1.png" class="card-img-top" alt="...">
+                                        <img src="img/collar-2.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">品名</h3>
-                                            <p class="card-text">產品說明</p>
+                                            <h4 id="collar-2-name" class="card-title text-center">Amoworks</h4>
+                                            <p class="card-text text-center">波斯紋領圈</p>
+                                            <p id="collar-2-price" class="card-text text-center">NT. 100</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">尺寸</li>
-                                            <li class="list-group-item">數量</li>
+                                            <li class="list-group-item">
+                                                <label for="collar-2-size">尺寸：</label>
+                                                <select name="" id="collar-2-size" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇尺寸</option>
+                                                    <option value="S">S</option>
+                                                    <option value="M">M</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <label for="collar-2-count">數量：</label>
+                                                <select name="" id="collar-2-count" class="text-center mx-3">
+                                                    <option value="0" selected>請選擇數量</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </li>
                                         </ul>
                                         <div class="card-body">
-                                            <button class="btn btn-primary container">加入購物車</button>
+                                            <button onclick="addToShopCart('collar-2-name', 'collar-2-price', 'collar-2-size', 'collar-2-count')"
+                                            class="btn btn-primary container">加入購物車</button>
                                         </div>
                                     </div>
                                 </li>
                             </div>
                         </ul>
+                    </div>
+                </div>
+                <!-- 購物車 -->
+                <div class="col-2 pt-5">
+                    <div id="shopCart" class="border border-4 rounded bg-secondary">
+                        <h3 class="text-center pt-2">購物車</h3>
+                        <p class="fw-bold">總金額：<span id="totalPrice">0</span>元</p>
+                        <button class="btn btn-success mb-2" onclick="clearShopCart()">確認結帳</button>
+                        <div id="shopCartItem"></div>
                     </div>
                 </div>
             </div>

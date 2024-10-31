@@ -45,3 +45,53 @@ for (var i = 0; i < btns.length; i++) {
         this.className += " active";
     });
 }
+
+
+// ******************************************************
+
+var totalPrice = 0;
+
+function addToShopCart(nameId, priceId, sizeId, countId){
+    const name = document.getElementById(nameId).innerText;
+    const price = parseInt(document.getElementById(priceId).innerText.replace("NT. ",""))
+    const size = document.getElementById(sizeId).value;
+    const count = parseInt(document.getElementById(countId).value);
+
+    if(size === "0" || count === 0){
+        return alert("請確認商品尺寸或數量是否正確");
+    }
+
+    console.log(name);
+    console.log(price);
+    console.log(size);
+    console.log(count);
+
+
+    const itemTotal = price * count;
+    totalPrice += itemTotal;
+
+    const shopCartItem = document.getElementById("shopCartItem");
+    const itemDiv = document.createElement("div");
+
+    itemDiv.className = "border-top py-2";
+    itemDiv.innerHTML = `
+        <p>${name}</p>
+        <p>尺寸：${size}</p>
+        <p>數量：${count}</p>
+        <p>小計：${itemTotal}元</p>
+    `;
+    shopCartItem.appendChild(itemDiv);
+    document.getElementById("totalPrice").innerText = totalPrice;
+
+    document.getElementById(sizeId).value = "0";
+    document.getElementById(countId).value = "0";
+}
+
+// ******************************************************
+
+function clearShopCart(){
+    totalPrice = 0;
+    document.getElementById("shopCartItem").innerHTML = "";
+    document.getElementById("totalPrice").innerText = totalPrice;
+    alert("功能未開放");
+}
